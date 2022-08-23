@@ -13,10 +13,10 @@ const navigation = [
   
 const Header = () => {
   return (
-    <div className="relative bg-white">
-      <div className="max-w-7xl mx-auto">
-        <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-          <svg
+    <div className="relative bg-background-main">
+      {/* <div className="max-w-7xl mx-auto relative z-10 pb-8 sm:pb-16 md:pb-20 lg:w-full lg:pb-28 xl:pb-32 bg-red-500"> */}
+        {/* <div className=""> */}
+          {/* <svg
             className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
             fill="currentColor"
             viewBox="0 0 100 100"
@@ -24,10 +24,10 @@ const Header = () => {
             aria-hidden="true"
           >
             <polygon points="50,0 100,0 50,100 0,100" />
-          </svg>
+          </svg> */}
 
           <Popover>
-            <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
+            <div className="relative py-5 px-4 sm:px-6 lg:px-8">
               <nav
                 className="relative flex items-center justify-between sm:h-10 lg:justify-start"
                 aria-label="Global"
@@ -42,7 +42,7 @@ const Header = () => {
                       />
                     </a>
                     <div className="-mr-2 flex items-center md:hidden">
-                      <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                      <Popover.Button className="bg-background-main rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                         <span className="sr-only">Open main menu</span>
                         <MenuIcon className="h-6 w-6" aria-hidden="true" />
                       </Popover.Button>
@@ -119,8 +119,8 @@ const Header = () => {
               </Popover.Panel>
             </Transition>
           </Popover>
-        </div>
-      </div>
+        {/* </div> */}
+      {/* </div> */}
     </div>
   );
 }
