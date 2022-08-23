@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Header from './header';
+import Footer from './footer';
 
 export const siteTitle = "Invenerry - Inventory Management System";
 
@@ -14,8 +15,8 @@ const Layout = ({children}) => {
             <link rel="icon" href="/favicon.ico" />
         </Head>
         <Header/>
-          <main>{children}</main>
-          <footer>footer</footer>
+        <main>{children}</main>
+        <Footer/>
     </div>
   )
 }
