@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
+import Link from 'next/link'
 
 function Footer() {
   return (
@@ -51,14 +52,11 @@ function Footer() {
             <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
                 <p className="text-gray-500 text-sm text-center sm:text-left">
                     © 2022 Mehrnoosh —
-                    <a
-                        href="https://github.com/IVIehr/nextjs-landing-page"
-                        rel="noopener noreferrer"
-                        className="text-gray-600 ml-1"
-                        target="_blank"
-                        >
-                        @IVIehr
-                    </a>
+                    <Link href="https://github.com/IVIehr/nextjs-landing-page" rel="noopener noreferrer" target="_blank">
+                        <a className="text-gray-600 ml-1">
+                            @IVIehr
+                        </a>
+                    </Link>
                 </p>
                 <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
                     <a className="text-gray-500">
