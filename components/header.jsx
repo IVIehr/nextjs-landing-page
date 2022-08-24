@@ -35,7 +35,7 @@ const Header = () => {
               >
                 <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                   <div className="flex items-center justify-between w-full md:w-auto">
-                    <Link href="/workflow">
+                    <Link href="/">
                       <img
                         className="h-8 w-auto sm:h-10 cursor-pointer"
                         src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"

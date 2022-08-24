@@ -1,8 +1,11 @@
 import React from 'react'
+import Layout from '../components/layout'
 
 function Login() {
   return (
-    <div>login</div>
+    <Layout>
+      hi from login
+    </Layout>
   )
 }
 
