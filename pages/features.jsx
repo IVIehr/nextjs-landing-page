@@ -32,9 +32,9 @@ const features = [
   },
 ];
 
-export default function Features() {
+export default function Features({id}) {
   return (
-    <div className="mb-12 py-12 bg-white">
+    <div className="mb-12 py-12 bg-white" id={id}>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center py-10">
           <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">

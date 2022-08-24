@@ -4,7 +4,7 @@ import Footer from './footer';
 
 export const siteTitle = "Invenerry - Inventory Management System";
 
-const Layout = ({children}) => {
+const Layout = ({children, featuresId}) => {
   return (
     <div>
         <Head>
@@ -14,7 +14,7 @@ const Layout = ({children}) => {
             />
             <link rel="icon" href="/workflow.svg" />
         </Head>
-        <Header/>
+        <Header featuresId={featuresId}/>
         <main>{children}</main>
         <Footer/>
     </div>

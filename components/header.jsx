@@ -5,14 +5,14 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Fragment } from "react";
 import Link from 'next/link';
 
-const navigation = [
-    { name: "Product", href: "/products" },
-    { name: "Features", href: "/features" },
-    { name: "Marketplace", href: "/marketplace" },
-    { name: "Company", href: "/company" }
-];
-  
-const Header = () => {
+
+const Header = ({featuresId}) => {
+  const navigation = [
+      { name: "Product", href: "/products" },
+      { name: "Features", href: `#${featuresId}` },
+      { name: "Marketplace", href: "/marketplace" },
+      { name: "Company", href: "/company" }
+  ];
   return (
     <div className=" bg-background-main sticky top-0">
       {/* <div className="max-w-7xl mx-auto relative z-10 pb-8 sm:pb-16 md:pb-20 lg:w-full lg:pb-28 xl:pb-32 bg-red-500"> */}
