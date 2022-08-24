@@ -12,7 +12,7 @@ const Layout = ({children}) => {
             name="description"
             content="Invenerry - Inventory Management System"
             />
-            <link rel="icon" href="/favicon.ico" />
+            <link rel="icon" href="/workflow.svg" />
         </Head>
         <Header/>
         <main>{children}</main>
