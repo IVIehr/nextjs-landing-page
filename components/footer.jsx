@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 function Footer() {
   return (
-    <footer className='text-gray-600 body-font fixed w-full lg:bottom-0  '>
+    <footer className='text-gray-600 body-font md:fixed w-full md:bottom-0'>
         <div className="container p-5 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
             <div className="bg-white w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
                 <div className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
@@ -26,7 +26,7 @@ function Footer() {
                     Inventory Management Solution
                 </p>
             </div>
-            <div className=" flex-grow flex flex-wrap md:pl-20 md:mt-0 mt-10 md:text-left text-center">
+            <div className=" flex-grow flex flex-wrap md:pl-20 md:mt-0 mt-10 md:text-left text-center" >
                 <div className="lg:w-1/4 md:w-1/2 w-full px-4">
                     <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm my-3">
                         CATEGORIES
