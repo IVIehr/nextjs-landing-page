@@ -14,7 +14,7 @@ const navigation = [
   
 const Header = () => {
   return (
-    <div className="relative bg-background-main">
+    <div className=" bg-background-main sticky top-0">
       {/* <div className="max-w-7xl mx-auto relative z-10 pb-8 sm:pb-16 md:pb-20 lg:w-full lg:pb-28 xl:pb-32 bg-red-500"> */}
         {/* <div className=""> */}
           {/* <svg
