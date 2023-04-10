@@ -7,12 +7,12 @@ import LinkNext from 'next/link';
 import { Link } from 'react-scroll';
 
 
-const Header = ({featuresId}) => {
+const Header = ({featuresId, productId, companyId, marketId}) => {
   const navigation = [
       { name: "Features", href: featuresId },
-      { name: "Product", href: "/products" },
-      { name: "Marketplace", href: "/marketplace" },
-      { name: "Company", href: "/company" }
+      { name: "Product", href: productId },
+      { name: "Marketplace", href: marketId },
+      { name: "Company", href: companyId }
   ];
   return (
     <div className=" bg-background-main sticky top-0">

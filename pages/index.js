@@ -1,14 +1,24 @@
 import Layout from '../components/layout'
 import Hero from '../components/Hero'
 import Features from './features'
+import Marketplace from './marketplace';
+import Products from './products';
+import Company from './company';
 
 const featuresId = "section-features";
+const productId = "section-products";
+const marketId = "section-market";
+const companyId = "section-company";
+
 export default function Home() {
   return (
     <div>
-      <Layout featuresId={featuresId}>
+      <Layout featuresId={featuresId} productId={productId} marketId={marketId} companyId={companyId}>
         <Hero/>
         <Features id={featuresId}/>
+        <Products id={productId}/>
+        <Marketplace id={marketId}/>
+        <Company id={companyId}/>
       </Layout>
     </div>
   )
