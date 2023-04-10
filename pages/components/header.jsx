@@ -16,18 +16,6 @@ const Header = ({featuresId, productId, companyId, marketId}) => {
   ];
   return (
     <div className=" bg-background-main sticky top-0">
-      {/* <div className="max-w-7xl mx-auto relative z-10 pb-8 sm:pb-16 md:pb-20 lg:w-full lg:pb-28 xl:pb-32 bg-red-500"> */}
-        {/* <div className=""> */}
-          {/* <svg
-            className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
-            fill="currentColor"
-            viewBox="0 0 100 100"
-            preserveAspectRatio="none"
-            aria-hidden="true"
-          >
-            <polygon points="50,0 100,0 50,100 0,100" />
-          </svg> */}
-
           <Popover>
             <div className="relative py-5 px-4 sm:px-6 lg:px-8">
               <nav
@@ -110,8 +98,6 @@ const Header = ({featuresId, productId, companyId, marketId}) => {
               </Popover.Panel>
             </Transition>
           </Popover>
-        {/* </div> */}
-      {/* </div> */}
     </div>
   );
 }
