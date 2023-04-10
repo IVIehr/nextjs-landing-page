@@ -1,9 +1,9 @@
 import Layout from '../components/layout'
 import Hero from '../components/Hero'
-import Features from './features'
-import Marketplace from './marketplace';
-import Products from './products';
-import Company from './company';
+import Features from '../components/features'
+import Marketplace from '../components/marketplace';
+import Products from '../components/products';
+import Company from '../components/company';
 
 const featuresId = "section-features";
 const productId = "section-products";
