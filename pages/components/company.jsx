@@ -21,8 +21,8 @@ export default function Company({id}) {
         <div className="grid grid-cols-2 gap-4">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <img
-          src="teach.png"
-          alt="company"
+          src="assets/teach.png"
+          alt="vectore of a team"
           width={500}
           height={500}
         />
