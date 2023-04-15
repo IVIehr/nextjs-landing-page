@@ -84,7 +84,7 @@ export default function Products({id}) {
             Electronic
           </button>
         </div>
-        <div className="container justify-center my-3 mx-auto grid grid-cols-5 gap-4">
+        <div className="container justify-center my-3 mx-auto grid grid-cols-5 gap-4 p-4">
           {filter.map((product) => {
             return (
               <div key={product.id}>
