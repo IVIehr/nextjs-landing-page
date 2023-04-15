@@ -52,39 +52,39 @@ export default function Products({id}) {
   const ShowProducts = () => {
     return (
       <>
-        <div className="container flex justify-center mx-auto">
+        <div className="grid md:grid-cols-5 sm:grid-cols-2 w-2/4 mx-auto">
           <button
-            className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded m-2"
+            className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white text-center border border-blue-500 hover:border-transparent rounded m-2"
             onClick={() => setFilter(data)}
           >
             All
           </button>
           <button
-            className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded m-2"
+            className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white text-center border border-blue-500 hover:border-transparent rounded m-2"
             onClick={() => filterProduct("men's clothing")}
           >
             Mens' Clothing
           </button>
           <button
-            className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded m-2"
+            className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white text-center border border-blue-500 hover:border-transparent rounded m-2"
             onClick={() => filterProduct("women's clothing")}
           >
             Womens' Clothing
           </button>
           <button
-            className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded m-2"
+            className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white text-center border border-blue-500 hover:border-transparent rounded m-2"
             onClick={() => filterProduct("jewelery")}
           >
             Jewelery
           </button>
           <button
-            className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded m-2"
+            className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white text-center border border-blue-500 hover:border-transparent rounded m-2"
             onClick={() => filterProduct("electronics")}
           >
             Electronic
           </button>
         </div>
-        <div className="container justify-center my-3 mx-auto grid grid-cols-5 gap-4 p-4">
+        <div className="container justify-center my-3 mx-auto grid lg:grid-cols-5 md:grid-cols-3 gap-4 p-4">
           {filter.map((product) => {
             return (
               <div key={product.id}>
@@ -92,10 +92,10 @@ export default function Products({id}) {
                   <img
                     src={product.image}
                     alt={product.title}
-                    className="rounded-t-lg h-64"
+                    className="rounded-t-lg h-64 mx-auto"
                   />
                   <div className="card-body">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    <h5 className="my-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                       {product.title.substring(0, 12)}...
                     </h5>
                     <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">${product.price}</p>
@@ -120,7 +120,7 @@ export default function Products({id}) {
     <div className="mb-12 py-12 bg-white" id={id}>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center py-10">
-          <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
+          <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase my-1">
               All products
           </h2>
           <hr />

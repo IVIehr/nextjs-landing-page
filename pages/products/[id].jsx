@@ -47,7 +47,7 @@ export default function Product() {
   
     const ShowProduct = () => {
       return (
-        <div className="grid grid-cols-2 m-5">
+        <div className="grid md:grid-cols-2 gap-6 my-10 w-4/5 mx-auto">
           <div>
             <h2 className="uppercase text-gray-600 text-3xl"> {product.category}</h2>
             <h1 className="text-2xl mt-4 mb-2">{product.title}</h1>
@@ -84,17 +84,17 @@ export default function Product() {
       <div>
         <nav className="bg-background-main sticky top-0">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-5 p-4">
-                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 border-0">
                     <li>
-                    <a href="/" class="block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Back</a>
+                    <a href="/" class="block py-2 pl-3 pr-4 rounded md:bg-transparent text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Back</a>
                     </li>
                     <li>
-                    <a href="/" class="block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Cart</a>
+                    <a href="/" class="block py-2 pl-3 pr-4 rounded md:bg-transparent text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Cart</a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <div className="container p-5 ">
+        <div>
             {loading ? <Loading /> : <ShowProduct />}
         </div>
       </div>
