@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function Company({id}) {
   // const userState = useSelector((userState) => userState.handleUser);
-  // const navigate = useNavigate();
+  // const navigate = useNavigate(); 
 
   // const proceedTeaching = () => {
   //   if (userState !== null) {
@@ -20,8 +20,8 @@ export default function Company({id}) {
       <div className="container py-5 m-5">
         <div className="grid md:grid-cols-2 gap-4">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <img
-          src="assets/teach.png"
+          <Image
+          src="/assets/teach.png"
           alt="vectore of a team"
           width={500}
           height={500}
